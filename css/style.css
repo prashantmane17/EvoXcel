@@ -19,9 +19,9 @@
   transition: all 0.5s ease-out;
 }
 
-.container1 {
+/* .container1 {
   max-width: 1440px;
-}
+} */
 .nav-bar {
   display: flex;
   align-items: center;
@@ -148,7 +148,6 @@ body {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .container {
-  /* max-width: 1140px; */
   width: 100%;
   margin: 0 auto;
   padding: 3rem 0;
