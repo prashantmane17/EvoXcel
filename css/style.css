@@ -14,11 +14,10 @@
   top: 0;
   left: 0;
   height: 6px;
-  background:linear-gradient(to right, #3f9cff, #86bffc);
+  background: linear-gradient(to right, #3f9cff, #86bffc);
   z-index: 999;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
 }
-
 
 .container1 {
   max-width: 1440px;
@@ -149,7 +148,7 @@ body {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .container {
-  max-width: 1140px;
+  /* max-width: 1140px; */
   width: 100%;
   margin: 0 auto;
   padding: 3rem 0;
