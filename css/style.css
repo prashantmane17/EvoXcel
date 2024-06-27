@@ -720,7 +720,6 @@ header .footer-wave {
     background-position: 0;
   }
   100% {
-    
     background-position: 1440px;
   }
 }
@@ -729,7 +728,7 @@ header .footer-wave {
   margin-bottom: 120px;
   padding-left: 27px;
   padding-right: 27px;
-  width: 32vw;
+  /* width: 30vw; */
 }
 
 .listar-feature-item {
