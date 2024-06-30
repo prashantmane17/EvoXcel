@@ -13,25 +13,69 @@
 </head>
 
 <body>
+
     <section>
         <nav id="navbar"
-            class="flex nav items-center h-[10vh] w-[100%] bg-transparent fixed z-30 top-0 justify-between px-[12%]">
-            <h1 class="font-bold relative z-20 lg:text-[1.7vw] text-white font-hello">EvoXcel</h1>
-            <ul class="hidden lg:flex w-[40%] relative z-50 items-center justify-between font-[500] text-white">
-                <li class=""><a href="">Services</a></li>
-                <li>Pricing</li>
-                <li>About us</li>
-                <li>Contact us</li>
+            class="flex items-center h-[10vh] w-full bg-transparent fixed z-30 top-0 justify-between px-[4vw] transition-all duration-300">
+            <h1
+                class="font-bold relative z-20 lg:text-[2vw] text-white font-hello hover:text-gray-300 transition-colors duration-300">
+                <a>EvoXcel</a>
+            </h1>
+            <ul
+                class="hidden lg:flex w-[45%] relative z-50 items-center justify-between text-[1.4vw] font-[400] text-white">
+                <li class="relative group">
+                    <a href="#" class="flex items-center py-4 hover:text-gray-300 transition-colors duration-300">
+                        Services <i class="fas fa-caret-down ml-2"></i>
+                    </a>
+                    <ul
+                        class="absolute top-[8vh] hidden group-hover:block bg-white w-[20vw] shadow-lg text-gray-600 p-3 rounded-lg transition-all duration-300">
+                        <li class="my-3 hover:bg-gray-100 rounded-md transition-colors duration-200 flex items-center">
+                            <i class="fas fa-laptop-code mr-2"></i><a href="#">Web Development</a>
+                        </li>
+                        <li class="mb-4 hover:bg-gray-100 rounded-md transition-colors duration-200 flex items-center">
+                            <i class="fas fa-code mr-2"></i><a href="#">Software Development</a>
+                        </li>
+                        <li class="mb-4 hover:bg-gray-100 rounded-md transition-colors duration-200 flex items-center">
+                            <i class="fas fa-mobile-alt mr-2"></i><a href="#">Application Development</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="flex items-center py-4 hover:text-gray-300 transition-colors duration-300">
+                        Products <i class="fas fa-caret-down ml-2"></i>
+                    </a>
+                    <ul
+                        class="absolute top-[8vh] hidden group-hover:block bg-white w-[20vw] shadow-lg text-gray-600 p-3 rounded-lg transition-all duration-300">
+                        <li class="my-3 hover:bg-gray-100 rounded-md transition-colors duration-200 flex items-center">
+                            <i class="fas fa-envelope-open-text mr-2"></i><a href="#">Email Automation</a>
+                        </li>
+                        <li class="mb-4 hover:bg-gray-100 rounded-md transition-colors duration-200 flex items-center">
+                            <i class="fa-brands fa-linkedin mr-2"></i><a href="#">LinkedIn Automation</a>
+                        </li>
+                        <li class="mb-4 hover:bg-gray-100 rounded-md transition-colors duration-200 flex items-center">
+                            <i class="fas fa-filter-circle-dollar mr-2"></i><a
+                                href="./src/html/lead-generation.html">Lead Generation</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./src/html/pricing.html"
+                        class="hover:text-gray-300 py-4 transition-colors duration-300">Pricing</a></li>
+                <li><a href="./src/html/about-us.html"
+                        class="hover:text-gray-300 py-4 transition-colors duration-300">About us</a></li>
+                <li><a href="./src/html/contact.html"
+                        class="hover:text-gray-300 transition-colors py-4 duration-300">Contact us</a></li>
             </ul>
         </nav>
     </section>
+
 
     <section class="h-[100vh] w-[100%] img" id="particles-js">
 
         <article class="w-[100%] h-[100%] text-center">
             <h1 class="text-white md:text-[4vw] text-[7vw] font-bold px-2 md:px-0 md:w-[50%] m-auto pt-[25vh] mb-[7vh]">
-                Supercharge Your Lead Generation with <span class="">EvoXcel</span> </h1>
-            <h2 class="text-white md:w-[40%] m-auto md:text-[20px] mb-[5vh]">Leverage Our Cutting-Edge LinkedIn and
+                Supercharge Your Lead Generation with <span class="text-green-300">EvoXcel</span> </h1>
+            <h2 class="text-white md:w-[40%] font-sans m-auto md:text-[20px] mb-[5vh]">Leverage Our Cutting-Edge
+                LinkedIn and
                 Email Automation Tools to Skyrocket Your Business Growth</h2>
             <button class="border relative z-20 px-6 py-3 rounded-full text-white hover:text-black hover:bg-white">Get
                 Started Today</button>
@@ -146,7 +190,7 @@
         </div>
     </section>
 
-    <section class="chooseUs">
+    <section class="chooseUs hidden sm:block overflow-hidden">
         <div class="chooseUs_container">
             <div class='container3'>
                 <!-- Title -->
