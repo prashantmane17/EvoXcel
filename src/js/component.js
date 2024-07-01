@@ -4,11 +4,11 @@ class Navbar extends HTMLElement {
         <nav id="navbar"
             class="flex items-center h-[10vh] w-full bg-transparent fixed z-30 top-0 justify-between px-[4vw] transition-all duration-300">
             <h1
-                class="font-bold relative z-20 lg:text-[2vw] text-white font-hello hover:text-gray-300 transition-colors duration-300">
+                class="font-bold relative z-20 lg:text-[2vw] text-white font-hello hover:text-gray-300 transition-colors duration-300 textColor">
                 <a href="../../index.html">EvoXcel</a>
             </h1>
             <ul
-                class="hidden lg:flex w-[45%] relative z-50 items-center justify-between text-[1.4vw] font-[400] text-white">
+                class="hidden lg:flex w-[45%] relative z-50 items-center justify-between text-[1.4vw] font-[400] text-white textColor">
                 <li class="relative group">
                     <a href="#" class="flex items-center py-4 hover:text-gray-300 transition-colors duration-300">
                         Services <i class="fas fa-caret-down ml-2"></i>
@@ -138,3 +138,11 @@ customElements.define('app-footer', Footer);
 
 
 
+window.addEventListener('scroll', function () {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) { // Adjust this value as needed
+        navbar.classList.add('navbar-scrolled');
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+    }
+});

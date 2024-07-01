@@ -1,9 +1,8 @@
 @layer library, reset, base, demo;
-@import 'https://unpkg.com/open-props@2.0.0-beta.5' layer(library);
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
+@import "https://unpkg.com/open-props@2.0.0-beta.5" layer(library);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap");
 
 @layer reset {
-
   *,
   ::before,
   ::after {
@@ -14,13 +13,14 @@
     margin: 0;
   }
 }
+.textColor {
+  color: #000 !important;
+}
 
 @layer base {
   html {
     --nav-block-size: 74px;
-    --brand-gradient: linear-gradient(227deg,
-        #1400c7 0%,
-        #00bbff 100%);
+    --brand-gradient: linear-gradient(227deg, #1400c7 0%, #00bbff 100%);
 
     @media (prefers-reduced-motion: no-preference) {
       scroll-behavior: smooth;
@@ -28,71 +28,12 @@
   }
 
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     min-block-size: 100dvb;
   }
 }
 
 @layer demo {
-  .navbar {
-    min-block-size: var(--nav-block-size);
-    display: grid;
-    position: fixed;
-    inset-block-start: 0;
-    inset-inline: 0;
-    background-color: white;
-    z-index: var(--layer-3);
-    place-items: center end;
-    padding-block: var(--size-3);
-    padding-inline: var(--size-5);
-
-    @media (width >=600px) {
-      padding-inline: 6dvi;
-    }
-  }
-
-  .nav-cta-btn {
-    font-size: var(--font-size-1);
-    font-weight: var(--font-weight-7);
-    inline-size: max-content;
-    white-space: nowrap;
-    text-decoration: none;
-    padding-block: var(--size-3);
-    padding-inline: var(--size-7);
-    border: var(--border-size-2) solid transparent;
-    color: black;
-    position: relative;
-    isolation: isolate;
-
-    background: linear-gradient(white, white) padding-box,
-      var(--brand-gradient) border-box;
-    border-radius: var(--radius-6);
-    overflow: hidden;
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      inset: 0;
-
-      background: var(--brand-gradient);
-      mix-blend-mode: screen;
-    }
-
-    &:hover {
-      color: white;
-
-      &::before {
-        background: var(--brand-gradient) padding-box,
-          var(--brand-gradient) border-box;
-        background-repeat: no-repeat;
-        background-size: contain;
-        mix-blend-mode: normal;
-        z-index: -1;
-      }
-    }
-  }
-
   .section {
     --section-block-size: max(400px, 100dvb);
     display: grid;
@@ -102,7 +43,7 @@
     block-size: 100%;
     display: grid;
 
-    >* {
+    > * {
       grid-area: 1/1;
     }
   }
@@ -220,7 +161,7 @@
     place-items: center;
     overflow: clip;
 
-    >* {
+    > * {
       grid-area: 1/1;
     }
   }
@@ -259,27 +200,19 @@
   }
 
   .content-1 {
-    --_text-gradient: linear-gradient(227deg,
-        #1400c7 0%,
-        #00bbff 100%);
+    --_text-gradient: linear-gradient(227deg, #1400c7 0%, #00bbff 100%);
   }
 
   .content-2 {
-    --_text-gradient: linear-gradient(227deg,
-        #28dc28 0%,
-        #00bbff 100%);
+    --_text-gradient: linear-gradient(227deg, #28dc28 0%, #00bbff 100%);
   }
 
   .content-3 {
-    --_text-gradient: linear-gradient(227deg,
-        #1400c7 0%,
-        #b800b1 100%);
+    --_text-gradient: linear-gradient(227deg, #1400c7 0%, #b800b1 100%);
   }
 
   .content-4 {
-    --_text-gradient: linear-gradient(227deg,
-        #b800b1 0%,
-        #f50000 100%);
+    --_text-gradient: linear-gradient(227deg, #b800b1 0%, #f50000 100%);
   }
 
   .text-highlight {

@@ -6,11 +6,12 @@
   box-sizing: border-box;
 }
 
-
-
 .contactUs {
   width: 100%;
   padding-top: 10vh;
+}
+.textColor {
+  color: #000;
 }
 
 .contact {
@@ -18,7 +19,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #fafafa;
+
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -134,12 +135,12 @@ textarea.input {
   transform: translateY(0);
 }
 
-.btn {
+.contact-form .btn {
   padding: 0.6rem 1.3rem;
-  background-color: #fff;
+  background-color: #ffffff00;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #1abc9c;
+  color: #fcfdfd;
   line-height: 1;
   border-radius: 5px;
   outline: none;
@@ -149,9 +150,9 @@ textarea.input {
   width: 100%;
 }
 
-.btn:hover {
-  background-color: transparent;
-  color: #fff;
+.contact-form .btn:hover {
+  background-color: #fff;
+  color: #7e1abc;
 }
 
 .input-container span {
@@ -223,7 +224,7 @@ textarea.input {
 }
 
 .information i {
-  color: #1abc9c;
+  color: #b71abc;
 }
 
 .icon {
@@ -248,7 +249,7 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, #149279);
+  background: linear-gradient(45deg, #bc1aa9da, #5717afd1);
   color: #fff;
   text-align: center;
   line-height: 35px;
